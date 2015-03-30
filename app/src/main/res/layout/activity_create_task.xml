@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.44"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/eventTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Task" />
+
+            <EditText
+                android:id="@+id/eventTitleInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/deadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Deadline " />
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1" >
+
+            <Switch
+                android:id="@+id/urgentSwitch"
+                android:layout_width="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_row="1"
+                android:text="Urgent"
+                android:textSize="14sp" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_row="0"
+                android:layout_weight="0.03"
+                android:calendarViewShown="false" />
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.68"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:id="@+id/redColor"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="#ffffffff"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/red_n" />
+
+                <ImageButton
+                    android:id="@+id/blueColor"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="#ffffffff"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/blue_n" />
+
+                <ImageButton
+                    android:id="@+id/yellowColor"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="#ffffffff"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/yellow_n" />
+
+                <ImageButton
+                    android:id="@+id/greyColor"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="#ffffffff"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/grey_n" />
+
+                <ImageButton
+                    android:id="@+id/greenColor"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="#ffffffff"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/green_n" />
+
+                <ImageButton
+                    android:id="@+id/pinkColor"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="#ffffffff"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/pink_n" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/markCompleteButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button"
+                android:textColor="@color/titlebackgroundcolor"  
+                android:layout_marginTop="10dp"
+                android:text="Create Task" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
